@@ -35,10 +35,9 @@ function envato_boosting_promotions_post_type()
     );
     $args = array(
         'label' => __('Promotion', 'envato'),
-        'description' => __('Notable for description', 'envato'),
+        'description' => __('Promotion description', 'envato'),
         'labels' => $labels,
         'supports' => array('title', 'editor'),
-        //'taxonomies' => array('category', 'post_tag'),
         'hierarchical' => false,
         'public' => true,
         'show_ui' => true,
@@ -54,7 +53,7 @@ function envato_boosting_promotions_post_type()
         'capability_type' => 'page',
         'show_in_rest' => true,
     );
-    register_post_type('post_type_Promotion', $args);
+    register_post_type('post_type_promotion', $args);
 
 }
 add_action('init', 'envato_boosting_promotions_post_type', 0);

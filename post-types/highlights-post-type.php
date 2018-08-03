@@ -35,10 +35,10 @@ function envato_boosting_highlights_post_type()
     );
     $args = array(
         'label' => __('Highlight', 'boosting'),
-        'description' => __('Notable for description', 'boosting'),
+        'description' => __('Highlight description', 'boosting'),
         'labels' => $labels,
         'supports' => array('title', 'editor'),
-        //'taxonomies' => array('category', 'post_tag'),
+        'taxonomies' => array('category'),
         'hierarchical' => false,
         'public' => true,
         'show_ui' => true,

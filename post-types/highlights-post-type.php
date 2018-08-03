@@ -38,7 +38,6 @@ function envato_boosting_highlights_post_type()
         'description' => __('Highlight description', 'boosting'),
         'labels' => $labels,
         'supports' => array('title', 'editor'),
-        'taxonomies' => array('category'),
         'hierarchical' => false,
         'public' => true,
         'show_ui' => true,

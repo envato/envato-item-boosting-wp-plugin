@@ -53,8 +53,8 @@ function envato_boosting_promotions_post_type()
         'capability_type' => 'page',
         'show_in_rest' => true,
         'show_in_graphql' => true,
-        'graphql_single_name' => 'highlight',
-        'graphql_plural_name' => 'highlights'
+        'graphql_single_name' => 'promotion',
+        'graphql_plural_name' => 'promotions'
 
     );
     register_post_type('post_type_promotion', $args);

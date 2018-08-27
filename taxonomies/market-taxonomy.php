@@ -20,6 +20,9 @@ function envato_boosting_marketplace_taxonomy() {
     'query_var'         => true,
     'rewrite'           => array( 'slug' => 'marketplace' ),
     'show_in_rest'      => true,
+    'show_in_graphql' => true,
+    'graphql_single_name' => 'marketplace',
+    'graphql_plural_name' => 'marketplaces',
   );
 
   register_taxonomy(

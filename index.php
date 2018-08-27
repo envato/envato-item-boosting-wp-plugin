@@ -3,7 +3,7 @@
 Plugin Name: Envato Boosting Post Types
 Plugin URI: 
 Description: Envato Boosting Post Types
-Version: 0.1.3
+Version: 0.1.4
 Author: Ivor
 Author URI: https://ivorpad.com
 Text Domain: 'envato'

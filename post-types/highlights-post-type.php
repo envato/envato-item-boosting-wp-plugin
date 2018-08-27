@@ -52,6 +52,9 @@ function envato_boosting_highlights_post_type()
         'publicly_queryable' => false,
         'capability_type' => 'page',
         'show_in_rest' => true,
+        'show_in_graphql' => true,
+        'graphql_single_name' => 'highlight',
+        'graphql_plural_name' -> 'highlights'
     );
     register_post_type('post_type_highlight', $args);
 

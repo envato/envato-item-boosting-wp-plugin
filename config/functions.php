@@ -1,6 +1,4 @@
 <?php 
-
-
 function envato_boosting_admin_menu() {
     add_menu_page(
         'Boosting',
@@ -19,16 +17,15 @@ function envato_boosting_rest_allow_origins() {
 	
 	remove_filter( 'rest_pre_serve_request', 'rest_send_cors_headers' );
 	
-	 $allowed_domains = array(
-      'themeforest.net', 
-      'codecanyon.net', 
-      'videohive.net', 
-      'graphicriver.net', 
-      '3docean.net', 
-      'photodune.net'
-     );
-
-		
+	$allowed_domains = array(
+    'themeforest.net', 
+    'codecanyon.net', 
+    'videohive.net', 
+    'graphicriver.net', 
+    '3docean.net', 
+    'photodune.net'
+  );
+	
 	$origin = str_replace('https://', '', $_SERVER["HTTP_ORIGIN"]);
 
 	if(isset( $_SERVER["HTTP_ORIGIN"] ) && in_array($origin, $allowed_domains)) {
